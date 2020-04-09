@@ -28,7 +28,12 @@ go run main.go
 
 - test the killer
 ```
+# deploy a pod
 k run nginx --image=nginx --restart=Never
-k label pods nginx app=crixo
-k label pods delete-pod=yes
+
+# add a label not managed
+k label pods nginx app=crixo 
+
+# add the killer label
+k label pods delete-pod=
 ```

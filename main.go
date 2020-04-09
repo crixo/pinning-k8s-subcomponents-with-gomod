@@ -19,9 +19,6 @@ import (
 )
 
 const (
-	// K8S_LABEL_AWS_REGION is the key name to retrieve the region from a
-	// Node that runs on AWS.
-	K8S_LABEL_AWS_REGION = "failure-domain.beta.kubernetes.io/region"
 	K8S_LABEL_POD_TO_DEL = "delete-pod"
 )
 
